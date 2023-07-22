@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header{
+            z-index: 999;
+            position: sticky;
+            top: 0;
+        }
+        .ul-1 {
+            list-style-type: none;
+            background-color: #E25300;
+            color: white;
+            border-radius: 8px;
+            padding: 0;
+        }
+        .ul-1 li {
+            display: inline-block;
+            padding: 10px;
+        }
+        .tag-div {
+            background-color: #CCCCCC;
+            width: 100%;
+            height: 900px;
+            position: relative;
+        }
+        .x {
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+        }
+        .tag-div-1 {
+            background-color: #D44E00;
+        }
+        .div-2 {
+            background-color: #D40000;
+            right: 20px;
+            top: 20px;
+        }
+        .div-4 {
+            background-color: #2A00D4;
+            left: 100px;
+            bottom: 50px;
+        }
+        .div-3 {
+            background-color: green;
+            right: 50px;
+            bottom: 30px;
+        }
+        .tag-div-7 {
+            background-color: #0065BC;
+            font-size: 20px;
+            padding: 80px 50px;
+            border-radius: 8px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .tag-div-7::before {
+            content: "";
+            background-color: #00539B;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            border-radius: 50%;
+            left: 20px;
+            z-index: 0;
+        }
+        .tag-div-6 {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+        .tag-div-6::first-line {
+            text-transform: uppercase;
+        }
+        .tag-div-6::first-letter {
+            font-size: 50px;
+        }
+        .tag-div-7::after {
+            content: "";
+            background-color: #00539B;
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            border-radius: 50%;
+            right: -40px;
+            bottom: -40px;
+            z-index: 0;
+        }
+    </style>
+
+
+
+
+    <h2>Bài tập về positon</h2>
+    <header>
+        <ul class="ul-1">
+            <li>Trang chủ</li>
+            <li>Giới thiệu</li>
+            <li>Sản phẩm</li>
+            <li>Tin tức</li>
+            <li>Liên hệ</li>
+        </ul>
+    </header>
+
+    <div class="tag-div">
+        <div class="x tag-div-1">1</div>
+        <div class="x div-2">2</div>
+        <div class="x div-3">3</div>
+        <div class="x div-4">4</div>
+    </div>
+    <div class="tag-div-7">
+        <div class="tag-div-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloremque non voluptatem officiis ipsam mollitia quas, reprehenderit enim expedita consectetur, at laborum? Quaerat, rerum! A facilis autem aspernatur? Suscipit, saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloremque non voluptatem officiis ipsam mollitia quas, reprehenderit enim expedita consectetur, at laborum? Quaerat, rerum! A facilis autem aspernatur? Suscipit, saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloremque non voluptatem officiis ipsam mollitia quas, reprehenderit enim expedita consectetur, at laborum? Quaerat, rerum! A facilis autem aspernatur? Suscipit, saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloremque non voluptatem officiis ipsam mollitia quas, reprehenderit enim expedita consectetur, at laborum? Quaerat, rerum! A facilis autem aspernatur? Suscipit, saepe.
+        </div>
+    </div>
+
+
+
+</body>
+</html>

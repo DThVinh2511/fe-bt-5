@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        /* bộ chọn anh chị em liền kề */
+        /* div+p {
+            background: orange;
+        } */
+        /* bộ chọn anh chị em chung */
+        /* div ~ p {
+            background: orange;
+        } */
+        /* bộ chọn con */
+        /* div > p {
+            background: orange;
+        } */
+        /* bộ chọn hậu duệ */
+        /* div p {
+            background: orange;
+        } */
+        /* có thể lồng các bộ chọn */
+        div section article p {
+            background: orange;
+        }
+    </style>
+
+
+    <p>Nội dung 0</p>
+    <div>
+        <p>Nội dung 1</p>
+        <p>Nội dung 2</p>
+
+        <section>
+            <p>Nội dung section 1</p>
+            <p>Nội dung section 2</p>
+            <article>
+                <p>Nội dung article 1</p>
+                <p>Nội dung article 2</p>
+            </article>
+        </section>
+    </div>
+    <p>Nội dung abc</p>
+    <h2>Nội dung thẻ h2</h2>
+    <p>Nội dung 3</p>
+    <p>Nội dung 4</p>
+</body>
+</html>
